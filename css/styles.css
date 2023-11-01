@@ -19,6 +19,100 @@ body {
     background-color: var(--white-background-color);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.team-background {
+    background-color: var(--light-color);
+}
+
+/* ------------------------------------------------------ */
+
+/* ========== MOBILE ========== */
+@media screen and (max-width: 428px) {
+    .container {
+        width: 428px;
+    }
+    
+    .icon-box {
+        display: none;
+    }
+
+    .sectionthree {
+        display: none;
+    }
+}
+
+/* ========== TABLET ========== */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    
+    .icon-box {
+        display: none;
+    }
+
+    .sectionthree {
+        display: none;
+    }
+}
+
+/* ========== DESKTOP ========== */
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .icon-box {
+        background-color: var(--light-color);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+}
+
  .nav-links .link {
     color: var(--dark-color);
     font-size: 16px;
@@ -50,14 +144,6 @@ body {
 .address {
     font-style: normal;
     padding: 24px 0;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
 }
 
 .filter-button {
@@ -99,10 +185,6 @@ body {
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
     border: 1px solid transparent;
-}
-
-.cursor {
-    cursor: pointer;
 }
 
 .logo {
@@ -147,10 +229,6 @@ body {
     margin: 0 auto;
     max-width: 496px;
     padding-bottom: 48px;
-}
-
-.team-background {
-    background-color: var(--light-color);
 }
 
 .headertwo {
@@ -205,12 +283,6 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -225,23 +297,6 @@ body {
 .address-links {
     display: flex;
     gap: 40px;
-}
-
-img {
-    display: block;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 /* main */
@@ -320,24 +375,7 @@ img {
     margin-bottom: 16px;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* 4 */
-
-.icon-box {
-    background-color: var(--light-color);
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-}
 
 .socials-links {
     display: flex;
@@ -737,19 +775,6 @@ img {
 
 .policy-link {
     color: var(--primary-brand-color);
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 .send-button {

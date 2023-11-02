@@ -59,6 +59,32 @@ img {
     overflow: hidden;
 }
 
+.filter-buttonone {
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-buttonone:hover,
+.filter-buttonone:focus {
+    background-color: var(--pressed-state-color);
+    color: var(--white-background-color);
+    border: 1px solid transparent;
+}
+
 .team-background {
     background-color: var(--light-color);
 }
@@ -78,6 +104,31 @@ img {
     .sectionthree {
         display: none;
     }
+    
+    .title {
+        color: var(--white-background-color);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        display: block;
+        margin: 0 auto;
+        max-width: 320px;
+        padding-bottom: 72px;
+    }
+
+    .title-background {
+        background-color: var(--dark-color);
+        padding: 112px 0;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 428px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 /* ========== TABLET ========== */
@@ -92,6 +143,30 @@ img {
 
     .sectionthree {
         display: none;
+    }
+
+    .title {
+        color: var(--white-background-color);
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        display: block;
+        margin: 0 auto;
+        max-width: 496px;
+        padding-bottom: 36px;
+    }
+
+    .title-background {
+        background-color: var(--dark-color);
+        padding: 112px 0;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 768px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -110,6 +185,30 @@ img {
         width: 264px;
         height: 112px;
         margin-bottom: 8px;
+    }
+
+    .title {
+        color: var(--white-background-color);
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        display: block;
+        margin: 0 auto;
+        max-width: 496px;
+        padding-bottom: 48px;
+    }
+
+    .title-background {
+        background-color: var(--dark-color);
+        padding: 188px 0;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 1440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -161,32 +260,6 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-buttonone {
-    background-color: var(--primary-brand-color);
-    color: var(--white-background-color);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    display: block;
-    margin: 0 auto;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter-button:hover,
-.filter-button:focus,
-.filter-buttonone:hover,
-.filter-buttonone:focus {
-    background-color: var(--pressed-state-color);
-    color: var(--white-background-color);
-    border: 1px solid transparent;
-}
-
 .logo {
     color: var(--primary-brand-color);
     font-family: "Raleway", sans-serif;
@@ -205,30 +278,6 @@ img {
 
 .logo-spantwo {
     color: var(--light-color)
-}
-
-.title-background {
-    background-color: var(--dark-color);
-    padding: 188px 0;
-    margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.title {
-    color: var(--white-background-color);
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
-    display: block;
-    margin: 0 auto;
-    max-width: 496px;
-    padding-bottom: 48px;
 }
 
 .headertwo {

@@ -73,5 +73,8 @@
     <symbol id="icon-Frame" viewBox="0 0 32 32">
       <path fill="#fff" d="m32 2.667-32 15 10.227 3.156L26 8.5 14.002 21.988l.01.003-.012-.003v7.345l5.735-5.576L27 25.999l5-23.333z" style="fill:var(--color2, #fff)"/>
     </symbol>
+    <symbol id="icon-hamburger" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+    </symbol>
   </defs>
 </svg>

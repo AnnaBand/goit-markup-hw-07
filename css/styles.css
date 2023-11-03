@@ -433,6 +433,15 @@ img {
     .input-footer {
         width: 264px;
     }
+
+    .footerfour {
+        display: block;
+    }
+
+    .form-footer {
+        display: flex;
+        gap: 24px;
+    }
 }
 
 /* ========== NON DESKTOP ========== */
@@ -606,14 +615,14 @@ img {
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-        .footerfour {
-            display: block;
-        }
+    .footerfour {
+        display: block;
+    }
     
-        .form-footer {
-            display: flex;
-            gap: 24px;
-        }
+    .form-footer {
+        display: flex;
+        gap: 24px;
+    }
     
     .input-footer {
             width: 264px;

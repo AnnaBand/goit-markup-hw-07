@@ -472,7 +472,7 @@ img {
 /* ------------------------------------------------------ */
 
 /* ========== MOBILE ========== */
-@media screen and (max-width: 428px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
     .container {
         width: 428px;
     }
@@ -509,12 +509,21 @@ img {
         background-color: var(--dark-color);
         padding: 112px 0;
         margin: 0 auto;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobilex1.jpg);
         max-width: 428px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .title-background {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobilex1.jpg);
+            }
+        }
 
     .list-sectiontwo,
     .list-sectionfour {
@@ -643,12 +652,21 @@ img {
         background-color: var(--dark-color);
         padding: 112px 0;
         margin: 0 auto;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tabletx1.jpg);
         max-width: 768px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .title-background {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tabletx2.jpg);
+            }
+        }
 
     .headertwo-desktop {
         text-align: left;
@@ -840,6 +858,15 @@ img {
         background-position: center;
         background-size: cover;
     }
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .title-background {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officex2.jpg);
+            }
+        }
 
     .filter-buttonone {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1115,87 +1142,60 @@ img {
     transform: translateX(0);
 }
 
-/* ===styl=== */
 .nav-links-mobile {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    margin: 24px 24px 40px 40px;
-    padding: 56px 213px 284px 0;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    list-style: none;
+    gap: 40px;
+    margin: 80px 40px;
 }
 
 .nav-links-mobile .link {
-    color: var(--color-navy-blue);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.current {
-    color: var(--color-ocean);
+    color: var(--dark-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
 }
 
 .address-mobile {
-    font-style: normal;
-    padding: ?;
+    margin-left: 40px;
+    padding-top: 284px;
+    padding-bottom: 48px;
 }
 
 .address-links-mobile {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    margin-left: 40px;
-    margin-bottom: 48px;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.72px;
+    gap: 40px;
     list-style: none;
 }
 
 .tel-mobile {
-    color: var(--color-iris);
+    color: var(--primary-brand-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
 }
 
 .mail-mobile {
+    color: var(--text-color);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
 .container-social-media-mobile {
-    width: 100%;
-    margin: 0 60px 40px 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 .socials-links-mobile {
     display: flex;
     gap: 56px;
     list-style: none;
-}
-
-.li-socials-mobile {
- calc
-}
-
-/* ===wg mnie nie trzeba, stare ok=== */
-.social-media-mobile-link {
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    display: flex;
-    background-color: var(--color-iris);
-        height: 40px;
-            width: 40px;
 }

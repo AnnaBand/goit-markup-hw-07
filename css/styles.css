@@ -585,7 +585,7 @@ img {
         padding: 112px 0;
         margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobilex1.jpg);
-        max-width: 428px;
+        width: 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -728,7 +728,7 @@ img {
         padding: 112px 0;
         margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tabletx1.jpg);
-        max-width: 768px;
+        width: 100%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

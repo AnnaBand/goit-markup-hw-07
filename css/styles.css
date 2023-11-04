@@ -65,6 +65,21 @@ img {
     overflow: hidden;
 }
 
+.header {
+    border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
 .filter-buttonone {
     background-color: var(--primary-brand-color);
     color: var(--white-background-color);
@@ -374,6 +389,41 @@ img {
         display: none;
     }
 
+    .nav-links .link {
+        color: var(--dark-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        padding: 24px 0;
+        display: inline-block;
+    }
+
+    .address-links .link {
+        font-style: normal;
+        color: var(--text-color);
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.48px;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .address-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 40px;
+    }
+
     .title {
         color: var(--white-background-color);
         text-align: center;
@@ -396,6 +446,10 @@ img {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+
+    .headertwo-desktop {
+        text-align: left;
     }
 
     .list-sectiontwo {
@@ -496,6 +550,45 @@ img {
         display: none;
     }
 
+    .nav-links .link {
+        color: var(--dark-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-block;
+    }
+
+    .address-links .link {
+        font-style: normal;
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .address-links .link:hover,
+    .address-links .link:focus,
+    .address-links .link:active,
+    .nav-links .link:hover,
+    .nav-links .link:focus,
+    .nav-links .link:active {
+        color: var(--pressed-state-color)
+    }
+
+    .address {
+        padding: 24px 0;
+    }
+    
+    .nav-links,
+    .address-links {
+        display: flex;
+        gap: 40px;
+    }
+
     .title {
         color: var(--white-background-color);
         text-align: center;
@@ -549,6 +642,7 @@ img {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.4px;
+        text-align: left;
     }
 
     .footer-background {
@@ -678,39 +772,6 @@ img {
     }
 }
 
- .nav-links .link {
-    color: var(--dark-color);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-block;
-}
-
-.address-links .link {
-    color: var(--text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-links .link:hover,
-.address-links .link:focus,
-.address-links .link:active,
-.nav-links .link:hover,
-.nav-links .link:focus,
-.nav-links .link:active {
-    color: var(--pressed-state-color)
-}
-
-.address {
-    font-style: normal;
-    padding: 24px 0;
-}
-
 .filter-button {
     background-color: var(--light-color);
     color: var(--primary-brand-color);
@@ -724,30 +785,6 @@ img {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* 3 */
-
-
-.header {
-    border-bottom: 1px solid var(--accent-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links,
-.address-links {
-    display: flex;
-    gap: 40px;
 }
 
 /* portfolio */

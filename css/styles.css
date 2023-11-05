@@ -533,7 +533,6 @@ img {
     
         .address-mobile {
             margin-left: 40px;
-            padding-top: 284px;
             padding-bottom: 48px;
         }
     
@@ -546,7 +545,7 @@ img {
     
         .tel-mobile {
             color: var(--primary-brand-color);
-            font-size: 36px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 700;
             line-height: 1.11;
@@ -569,7 +568,7 @@ img {
     
         .socials-links-mobile {
             display: flex;
-            gap: 56px;
+            gap: 24px;
             list-style: none;
         }
 

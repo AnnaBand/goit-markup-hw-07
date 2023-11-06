@@ -658,6 +658,17 @@ img {
         align-items: center;
         gap: 16px;
     }
+
+    .portfolio {
+        padding: 48px 0;
+    }
+
+    .filters-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 48px;
+    }
 }
 
 /* ========== TABLET ========== */
@@ -834,6 +845,17 @@ img {
     .modal-box {
         width: 408px;
         padding: 72px 24px 24px 24px;
+    }
+
+    .portfolio {
+        padding: 64px 0 96px;
+    }
+        
+    .filters-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 64px;
     }
 }
 
@@ -1114,6 +1136,17 @@ img {
         width: 408px;
         padding: 72px 24px 24px 24px;
     }
+
+    .portfolio {
+        padding: 96px 0 120px;
+    }
+
+    .filters-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
 }
 
 /* portfolio */
@@ -1131,17 +1164,6 @@ img {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio {
-    padding: 48px 0;
-}
-
-.filters-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 48px;
 }
 
 .list-portfolio {

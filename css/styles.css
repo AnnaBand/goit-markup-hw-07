@@ -1134,14 +1134,14 @@ img {
 }
 
 .portfolio {
-    padding: 96px 0 120px;
+    padding: 48px 0;
 }
 
 .filters-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
-    margin-bottom: 72px;
+    margin-bottom: 48px;
 }
 
 .list-portfolio {

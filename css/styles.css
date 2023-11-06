@@ -70,6 +70,15 @@ img {
     align-items: center;
 }
 
+.address-links .link:hover,
+.address-links .link:focus,
+.address-links .link:active,
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link:active {
+    color: var(--pressed-state-color)
+}
+
 .filter-buttonone {
     background-color: var(--primary-brand-color);
     color: var(--white-background-color);
@@ -87,7 +96,9 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.filter-button:hover,
 .filter-button:focus,
+.filter-buttonone:hover,
 .filter-buttonone:focus {
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
@@ -179,6 +190,11 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socials-icon:hover,
+.socials-icon:focus {
+    background-color: var(--pressed-state-color);
+}
+
 .svg-sm {
     fill: var(--light-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,6 +210,12 @@ img {
     align-items: center;
     color: var(--subtle-text-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    border: 1px solid var(--pressed-state-color);
+    color: var(--pressed-state-color)
 }
     
 .svg-customers {
@@ -226,6 +248,11 @@ img {
 .socials-links-footer {
     display: flex;
     gap: 16px;
+}
+
+.s-i-footer:hover,
+.s-i-footer:focus {
+    background-color: var(--success-color);
 }
 
 .logo {
@@ -289,11 +316,16 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
 .svg-subscribe {
     margin-left: 16px;
 }
 
-/* -------modal------- */
+/* -------------modal------------- */
 .modal-container {
     position: fixed;
     top: 0;
@@ -492,6 +524,24 @@ img {
 .send-button:focus {
     background-color: var(--pressed-state-color);
 }
+
+/* -------------portfolio------------- */
+
+.filter-button {
+    background-color: var(--light-color);
+    color: var(--primary-brand-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    padding: 8px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ------------------------------------------------------ */
 
 @media screen and (min-width: 428px) {
@@ -888,6 +938,10 @@ img {
         gap: 24px;
         margin-bottom: 64px;
     }
+
+    .filter-button {
+        padding: 12px 24px;
+    }
 }
 
 /* ========== NON DESKTOP ========== */
@@ -930,15 +984,6 @@ img {
         line-height: 1.5;
         letter-spacing: 0.32px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .address-links .link:hover,
-    .address-links .link:focus,
-    .address-links .link:active,
-    .nav-links .link:hover,
-    .nav-links .link:focus,
-    .nav-links .link:active {
-        color: var(--pressed-state-color)
     }
 
     .address {
@@ -1004,13 +1049,6 @@ img {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officex2.jpg);
             }
         }
-        
-    .filter-button:hover,
-    .filter-buttonone:hover {
-        background-color: var(--pressed-state-color);
-        color: var(--white-background-color);
-        border: 1px solid transparent;
-    }
 
     .icon-box {
         background-color: var(--light-color);
@@ -1068,11 +1106,6 @@ img {
     .li-customers {
         flex-basis: calc((100% - 5 * 24px) / 6);
     }
-    
-    .socials-icon:hover,
-    .socials-icon:focus {
-        background-color: var(--pressed-state-color);
-    }
 
     .customers-icon {
         width: 168px;
@@ -1080,12 +1113,6 @@ img {
 
     .svg-customers {
         width: 104px;
-    }
-
-    .customers-icon:hover,
-    .customers-icon:focus {
-        border: 1px solid var(--pressed-state-color);
-        color: var(--pressed-state-color)
     }
 
     .footer {
@@ -1106,11 +1133,6 @@ img {
         margin-bottom: 16px;
     }
 
-    .s-i-footer:hover,
-    .s-i-footer:focus {
-        background-color: var(--success-color);
-    }
-
     .logo {
         margin-right: 76px;
     }
@@ -1127,11 +1149,6 @@ img {
     .input-footer {
             width: 264px;
         }
-    
-    .subscribe-button:hover,
-    .subscribe-button:focus {
-        background-color: var(--pressed-state-color);
-    }
 
     .modal-box {
         width: 408px;
@@ -1148,24 +1165,13 @@ img {
         gap: 24px;
         margin-bottom: 72px;
     }
+
+    .filter-button {
+        padding: 12px 24px;
+    }
 }
 
-/* portfolio */
-
-.filter-button {
-    background-color: var(--light-color);
-    color: var(--primary-brand-color);
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    padding: 12px 24px;
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* /portfolio/ */
 
 .list-portfolio {
     display: flex;

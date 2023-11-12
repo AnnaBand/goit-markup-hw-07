@@ -79,7 +79,7 @@ img {
     color: var(--pressed-state-color)
 }
 
-.filter-buttonone {
+.main-button {
     background-color: var(--primary-brand-color);
     color: var(--white-background-color);
     font-family: inherit;
@@ -96,10 +96,10 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover,
-.filter-button:focus,
-.filter-buttonone:hover,
-.filter-buttonone:focus {
+.portfolio-button:hover,
+.portfolio-button:focus,
+.main-button:hover,
+.main-button:focus {
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
     border: 1px solid transparent;
@@ -527,7 +527,7 @@ img {
 
 /* -------------portfolio------------- */
 
-.filter-button {
+.portfolio-button {
     background-color: var(--light-color);
     color: var(--primary-brand-color);
     font-family: inherit;
@@ -565,8 +565,8 @@ img {
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     box-shadow:
         0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -794,7 +794,7 @@ img {
         padding: 48px 0;
     }
 
-    .filters-list {
+    .portfolio-buttons {
         display: flex;
         flex-wrap: wrap;
         row-gap: 16px;
@@ -802,7 +802,7 @@ img {
         margin-bottom: 48px;
     }
 
-    .list-portfolio {
+    .portfolio-list {
         display: flex;
         flex-direction: column;
         gap: 48px;
@@ -992,18 +992,18 @@ img {
         padding: 64px 0 96px;
     }
         
-    .filters-list {
+    .portfolio-buttons {
         display: flex;
         justify-content: center;
         gap: 24px;
         margin-bottom: 64px;
     }
 
-    .filter-button {
+    .portfolio-button {
         padding: 12px 24px;
     }
 
-    .list-portfolio {
+    .portfolio-list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 72px;
@@ -1235,18 +1235,18 @@ img {
         padding: 96px 0 120px;
     }
 
-    .filters-list {
+    .portfolio-buttons {
         display: flex;
         justify-content: center;
         gap: 24px;
         margin-bottom: 72px;
     }
 
-    .filter-button {
+    .portfolio-button {
         padding: 12px 24px;
     }
 
-    .list-portfolio {
+    .portfolio-list {
         display: flex;
         flex-wrap: wrap;
         row-gap: 48px;
